@@ -88,6 +88,8 @@ a 5xx-range (except 501) status code is received. For further details see
 				Validators: []validator.String{
 					stringvalidator.OneOf([]string{
 						http.MethodGet,
+						http.MethodPut,
+						http.MethodDelete,
 						http.MethodPost,
 						http.MethodHead,
 					}...),
